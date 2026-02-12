@@ -23,6 +23,12 @@ def generate_problem(operation: str, difficulty: int) -> int:
     # IF the problem is division, use this code to make the first number the higher one
     first_num = max([first_num, second_num])
     second_num = min([first_num, second_num])
+    if operation == "division":
+    if second_num > first_num:
+        temp = first_num
+        first_num = second_num
+        second_num = temp
+
 
     # eval() returns the solution to your problem.
 
@@ -59,7 +65,7 @@ def get_num_problems(operation):
     num_problems = int(input())
 
     while num_problems <= 0:               # This code asks the user to enter a number and will continue to until they enter a number greater than 0.
-        print("Enter a number greater than 0.")
+        print("Enter a number greater than 0!")
         num_problems = int(input())
     return num_problems
 
