@@ -24,10 +24,10 @@ def generate_problem(operation: str, difficulty: int) -> int:
     first_num = max([first_num, second_num])
     second_num = min([first_num, second_num])
     if operation == "division":
-    if second_num > first_num:
-        temp = first_num
-        first_num = second_num
-        second_num = temp
+        if second_num > first_num:
+            temp = first_num
+            first_num = second_num
+            second_num = temp
 
 
     # eval() returns the solution to your problem.
