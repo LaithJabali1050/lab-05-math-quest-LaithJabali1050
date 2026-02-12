@@ -39,8 +39,8 @@ def generate_problem(operation: str, difficulty: int) -> int:
     return answer
 
 def get_operation():
-"This function prompts the user to pick an operation until they enter a valid one"
-"then returns the operation as a string" 
+"""This function prompts the user to pick an operation until they enter a valid one"
+then returns the operation as a string""" 
     print("Would you like to practice addition, subtraction, multiplication, or division?")
     operation = input().strip()
      
@@ -49,9 +49,9 @@ def get_operation():
         operation = input().strip() # This code above prompts the user to enter an operation and repeats until they do so.
     return operation
 def get_num_problems(operation):
-" This function asks the user to input how many problems they want of the"
-"operation they chose and repeats until the user chooses a number greater than 0"
-"then the function returns the number of problems as an integer."
+""" This function asks the user to input how many problems they want of the"
+operation they chose and repeats until the user chooses a number greater than 0"
+then the function returns the number of problems as an integer."""
     print(f"How many types of {operation} problems would you like to solve?")
     num_problems = int(input())
 
